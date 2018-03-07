@@ -4,7 +4,11 @@
   "description": "This is a sample smart contract",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "truffle": "truffle",
+    "develop": "truffle develop",
+    "log": "truffle develop --log",
+    "truffle-ganache": "truffle migrate --compile-all --reset --network ganache",
+    "truffle-console": "truffle console --network ganache"
   },
   "repository": {
     "type": "git",
