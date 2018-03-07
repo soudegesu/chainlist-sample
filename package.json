@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/soudegesu/chainlist-sample/issues"
   },
-  "homepage": "https://github.com/soudegesu/chainlist-sample#readme"
+  "homepage": "https://github.com/soudegesu/chainlist-sample#readme",
+  "dependencies": {
+    "solc": "^0.4.18",
+    "truffle": "^4.0.4",
+    "web3": "^0.20.0"
+  }
 }
