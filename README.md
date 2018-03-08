@@ -1,13 +1,15 @@
 # chainlist-sample
-This is a sample smart contract
+
+This repo is based on [ChainSkills](https://www.udemy.com/getting-started-with-ethereum-solidity-development/)
 
 ## Requirements
-* node 9.2.1
-    * nodenv recommended
 
-## Install
+* node 9.6.1 or more
+* ganache
 
-```
-npm install
-```
+## Installation
 
+1. Install npm modules
+    ```javascript
+    npm install
+    ```

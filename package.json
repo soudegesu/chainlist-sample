@@ -1,28 +1,21 @@
 {
-  "name": "chainlist-sample",
+  "name": "chainskills",
   "version": "1.0.0",
-  "description": "This is a sample smart contract",
-  "main": "index.js",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "truffle": "truffle",
-    "develop": "truffle develop",
-    "log": "truffle develop --log",
-    "truffle-ganache": "truffle migrate --compile-all --reset --network ganache",
-    "truffle-console": "truffle console --network ganache"
+    "truffe": "truffle",
+    "truffle-ganache": "truffle migrate --network ganache",
+    "truffle-console": "truffle console --network ganache",
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/soudegesu/chainlist-sample.git"
-  },
-  "author": "",
+  "author": "ChainSkills",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/soudegesu/chainlist-sample/issues"
-  },
-  "homepage": "https://github.com/soudegesu/chainlist-sample#readme",
-  "dependencies": {
-    "solc": "^0.4.18",
-    "truffle": "^4.0.4",
-    "web3": "^0.20.0"
+  "devDependencies": {
+    "lite-server": "^2.3.0"
   }
 }
