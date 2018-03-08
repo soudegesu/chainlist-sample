@@ -1,5 +1,5 @@
 {
-  "name": "chainskills",
+  "name": "chainlist-sample",
   "version": "1.0.0",
   "description": "",
   "main": "truffle.js",
@@ -13,9 +13,13 @@
     "truffe-test": "truffle test --network ganache",
     "dev": "lite-server"
   },
-  "author": "ChainSkills",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "solc": "^0.4.18",
+    "truffle": "^4.0.4",
+    "web3": "^0.20.0"
   }
 }
