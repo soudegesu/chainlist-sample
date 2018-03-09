@@ -79,7 +79,7 @@ App = {
                   articleTemplate.find('.panel-title').text(article[1]);
                   articleTemplate.find('.article-description').text(article[2]);
                   articleTemplate.find('.article-price').text(web3.fromWei(article[3], "ether"));
-                  console.log(articleTemplate);
+
                   var seller = article[0];
                   if (seller == App.account) {
                         seller = "you";
