@@ -11,7 +11,7 @@
     "truffle-ganache": "truffle migrate --network ganache",
     "truffle-ganache-reset": "truffle migrate --compile-all --reset --network ganache",
     "truffle-console": "truffle console --network ganache",
-    "truffe-test": "truffle test --network ganache",
+    "truffle-test": "truffle test --network ganache",
     "dev": "lite-server"
   },
   "license": "ISC",
