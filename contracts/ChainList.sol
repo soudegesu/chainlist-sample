@@ -7,6 +7,13 @@ contract ChainList {
     string description;
     uint256 price;
 
+    // events
+    event LogSellArticle(
+        address indexed _seller,
+        string _name,
+        uint256 _price
+    );
+
     // constructor
     function ChainList() public {
         sellArticle("Default article", "This is article set by default", 10000000000000000000);
@@ -18,6 +25,8 @@ contract ChainList {
         name = _name;
         description = _description;
         price = _price;
+
+        LogSellArticle(seller, name, price);
     }
 
     // get article
