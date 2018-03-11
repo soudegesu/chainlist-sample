@@ -35,6 +35,7 @@ App = {
      },
 
      displayAccountInfo: function() {
+           console.log(web3.eth.accounts);
             web3.eth.getCoinbase(function(err, account){
                   if(err === null) {
                         App.account = account;
