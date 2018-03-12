@@ -44,7 +44,7 @@ contract('ChainList', function(accounts){
             assert.equal(receipt.logs[0].event, "LogSellArticle", "event shoulb be LogSellArticle");
             assert.equal(receipt.logs[0].args._seller, seller, "event seller must be " + seller);
             assert.equal(receipt.logs[0].args._name, articleName, "event article name must be " + articleName);
-            assert.equal(receipt.logs[0].args._price, articlePrice, "event article price must be " + articlePrice);
+            assert.equal(receipt.logs[0].args._price.toNumber(), web3.toWei(articlePrice), "event article price must be " + articlePrice);
         });
     });
 });
