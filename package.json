@@ -14,7 +14,8 @@
     "truffle-chainskills-reset": "truffle migrate --compile-all --reset --network chainskills",
     "truffle-console-chainskills": "truffle console --network chainskills",
     "truffle-console": "truffle console --network ganache",
-    "truffle-test": "truffle test --network ganache",
+    "truffle-test": "truffle test",
+    "truffle-test-ganache": "truffle test --network ganache",
     "dev": "lite-server"
   },
   "license": "ISC",
