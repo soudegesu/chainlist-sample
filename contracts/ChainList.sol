@@ -45,16 +45,16 @@ contract ChainList {
 
   // buy an article
   function buyArticle() payable public {
-    // we check whelther there is an article for sale
+    // we check whether there is an article for sale
     require(seller != 0x0);
 
-    // we check that article has not been sold yet
-    require(buyer == 0x0);
+    // we check that the article has not been sold yet
+    require(buyer == 0X0);
 
     // we don't allow the seller to buy his own article
     require(msg.sender != seller);
 
-    // we check that the value sent corresponds to the price od the article
+    // we check that the value sent corresponds to the price of the article
     require(msg.value == price);
 
     // keep buyer's information
@@ -63,7 +63,7 @@ contract ChainList {
     // the buyer can pay the seller
     seller.transfer(msg.value);
 
-    //trigger the event
+    // trigger the event
     LogBuyArticle(seller, buyer, name, price);
   }
 }
