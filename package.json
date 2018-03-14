@@ -1,25 +1,27 @@
 {
   "name": "chainlist-sample",
-  "version": "1.0.0",
-  "description": "This is a sample smart contract",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "truffle": "truffle",
-    "develop": "truffle develop",
-    "log": "truffle develop --log",
-    "truffle-ganache": "truffle migrate --compile-all --reset --network ganache",
-    "truffle-console": "truffle console --network ganache"
+    "truffe": "truffle",
+    "truffle-ganache": "truffle migrate --network ganache",
+    "truffle-ganache-reset": "truffle migrate --compile-all --reset --network ganache",
+    "truffle-chainskills": "truffle migrate --network chainskills",
+    "truffle-chainskills-reset": "truffle migrate --compile-all --reset --network chainskills",
+    "truffle-console-chainskills": "truffle console --network chainskills",
+    "truffle-console": "truffle console --network ganache",
+    "truffle-test": "truffle test",
+    "truffle-test-ganache": "truffle test --network ganache",
+    "dev": "lite-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/soudegesu/chainlist-sample.git"
-  },
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/soudegesu/chainlist-sample/issues"
+  "devDependencies": {
+    "lite-server": "^2.3.0"
   },
-  "homepage": "https://github.com/soudegesu/chainlist-sample#readme",
   "dependencies": {
     "solc": "^0.4.18",
     "truffle": "^4.0.4",
